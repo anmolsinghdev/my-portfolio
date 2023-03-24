@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { personalDetails } from '../Details';
 
 function Home() {
-  const { name, tagline, img } = personalDetails;
+  const { name, tagline } = personalDetails;
   const h11 = useRef();
   const h12 = useRef();
   const h13 = useRef();
