@@ -1,6 +1,6 @@
-import React from "react";
-import Project from "../Components/Project";
-import { projectDetails } from "../Details";
+import React from 'react';
+// import Project from '../Components/Project';
+// import { projectDetails } from '../Details';
 
 function Projects() {
   return (
@@ -10,7 +10,10 @@ function Projects() {
           Projects
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10">
-          {React.Children.toArray(
+          <div className="mt-4 text-dark-heading dark:text-light-heading font-bold">
+            Comming Soon...
+          </div>
+          {/* {React.Children.toArray(
             projectDetails.map(
               ({ title, image, description, techstack, previewLink, githubLink }) => (
                 <Project
@@ -23,7 +26,7 @@ function Projects() {
                 />
               )
             )
-          )}
+          )} */}
         </div>
       </section>
     </main>
