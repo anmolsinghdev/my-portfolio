@@ -57,7 +57,7 @@ function Home() {
   }, []);
 
   return (
-    <main className="container mx-auto max-width section md:flex justify-between items-center">
+    <main className="container mx-auto max-width section md:flex justify-center items-center">
       <div>
         <h1
           ref={h11}
@@ -79,12 +79,13 @@ function Home() {
         </h2>
       </div>
       <div className="mt-5 md:mt-0">
-        <img
+        {/* TODO attach own image */}
+        {/* <img
           ref={myimageref}
           className="w-1/2 md:ml-auto"
           src={img}
           alt="Pavan MG"
-        />
+        /> */}
       </div>
     </main>
   );
