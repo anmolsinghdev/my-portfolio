@@ -1,9 +1,28 @@
 import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { personalDetails } from '../Details';
+import Typewriter from 'typewriter-effect';
+
+function Type() {
+  return (
+    <Typewriter
+      options={{
+        strings: [
+          'Web Developer',
+          'Software Engineer',
+          'MERN Stack Developer',
+          'Open Source Contributor',
+        ],
+        autoStart: true,
+        loop: true,
+        deleteSpeed: 50,
+      }}
+    />
+  );
+}
 
 function Home() {
-  const { name, tagline } = personalDetails;
+  const { name } = personalDetails;
   const h11 = useRef();
   const h12 = useRef();
   const h13 = useRef();
@@ -75,7 +94,7 @@ function Home() {
           ref={h13}
           className="text-2xl text-dark-heading dark:text-light-heading md:text-4xl xl:text-5xl xl:leading-tight font-bold"
         >
-          {tagline}
+          <Type />
         </h2>
       </div>
       <div className="mt-5 md:mt-0">
