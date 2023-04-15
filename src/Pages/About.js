@@ -51,7 +51,7 @@ function About() {
       .from(
         WorkDetailRef.current,
         {
-          y: '-25%',
+          y: '-30%',
           delay: 1,
           opacity: 0,
           duration: 2,
@@ -73,7 +73,7 @@ function About() {
       .from(
         eduDetailsRef.current,
         {
-          y: '-30%',
+          y: '-15%',
           delay: 0.8,
           opacity: 0,
           duration: 2,
