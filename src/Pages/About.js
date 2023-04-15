@@ -51,8 +51,8 @@ function About() {
       .from(
         WorkDetailRef.current,
         {
-          y: '-100%',
-          delay: 0.9,
+          y: '-25%',
+          delay: 1,
           opacity: 0,
           duration: 2,
           ease: 'Power3.easeOut',
@@ -62,8 +62,8 @@ function About() {
       .from(
         educationRef.current,
         {
-          y: '-500%',
-          delay: 1,
+          y: '-25%',
+          delay: 0.8,
           opacity: 0,
           duration: 2,
           ease: 'Power3.easeOut',
@@ -73,8 +73,8 @@ function About() {
       .from(
         eduDetailsRef.current,
         {
-          y: '-120%',
-          delay: 1.2,
+          y: '-30%',
+          delay: 0.8,
           opacity: 0,
           duration: 2,
           ease: 'Power3.easeOut',
