@@ -39,29 +39,41 @@ function Header() {
           !isOpen ? 'hidden' : null
         } text-center md:flex justify-between`}
       >
-        <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
+        <ul className="custom-ul dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
           <li className="pb-1 md:pb-0">
-            <NavLink to="/" onClick={toggleClass}>
+            <NavLink to="/" onClick={toggleClass} className={'nav-items'}>
               Home
             </NavLink>
           </li>
           <li className="pb-1 md:pb-0">
-            <NavLink to="/about" onClick={toggleClass}>
+            <NavLink to="/about" onClick={toggleClass} className={'nav-items'}>
               About
             </NavLink>
           </li>
           <li className="pb-1 md:pb-0">
-            <NavLink to="/technologies" onClick={toggleClass}>
+            <NavLink
+              to="/technologies"
+              onClick={toggleClass}
+              className={'nav-items'}
+            >
               Technologies
             </NavLink>
           </li>
           <li className="pb-1 md:pb-0">
-            <NavLink to="/projects" onClick={toggleClass}>
+            <NavLink
+              to="/projects"
+              onClick={toggleClass}
+              className={'nav-items'}
+            >
               Projects
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" onClick={toggleClass}>
+            <NavLink
+              to="/contact"
+              onClick={toggleClass}
+              className={'nav-items'}
+            >
               Contact
             </NavLink>
           </li>
